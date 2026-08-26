@@ -246,6 +246,7 @@
         "./packages/subprocess/*/src",
         "./packages/e2b/*/src",
         "./packages/code-runtime/*/src",
+        "./packages/chat/*/src",
         "./packages/fs/*/src",
         "./packages/lsp/*/src",
         "./packages/skill/*/src",

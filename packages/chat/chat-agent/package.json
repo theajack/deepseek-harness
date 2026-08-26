@@ -36,6 +36,7 @@
   "dependencies": {
     "@deepseek-ai/dsh-chat-bots": "workspace:^",
     "@deepseek-ai/dsh-chat-group": "workspace:^",
+    "@deepseek-ai/dsh-chat-web-search": "workspace:^",
     "@deepseek-ai/dsh-host-apiproxy": "workspace:^",
     "@deepseek-ai/dsh-host-directory-picker-auto": "workspace:^",
     "@deepseek-ai/dsh-host-webserver": "workspace:^",

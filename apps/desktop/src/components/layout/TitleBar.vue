@@ -1,3 +1,11 @@
+<!--
+ * @Author: theajack theajack@qq.com
+ * @Date: 2026-08-26 00:33:28
+ * @LastEditors: theajack theajack@qq.com
+ * @LastEditTime: 2026-08-27 01:17:45
+ * @FilePath: \deepseek-harness\apps\desktop\src\components\layout\TitleBar.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { Minus, Square, X } from "lucide-vue-next";
@@ -27,7 +35,8 @@ async function win(action: "minimize" | "toggleMaximize" | "close") {
 <template>
   <!-- 透明可拖拽顶栏 -->
   <div
-    class="fixed top-0 right-0 left-0 z-30 flex h-3 cursor-move select-none items-center bg-transparent"
+    class="fixed top-0 right-0 left-0 z-30 flex cursor-move select-none items-center bg-transparent"
+    :class="isMac ? 'h-3' : 'h-3'"
     data-tauri-drag-region
     @mousedown="startDrag"
   >
