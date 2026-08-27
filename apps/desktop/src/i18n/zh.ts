@@ -61,6 +61,7 @@ export const zh: MessageDict = {
   // 标题栏
   'titlebar.minimize': '最小化',
   'titlebar.maximize': '最大化',
+  'titlebar.restore': '向下还原',
   'titlebar.close': '关闭',
 
   // 通用

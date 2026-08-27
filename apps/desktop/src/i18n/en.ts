@@ -61,6 +61,7 @@ export const en: MessageDict = {
   // Title bar
   'titlebar.minimize': 'Minimize',
   'titlebar.maximize': 'Maximize',
+  'titlebar.restore': 'Restore Down',
   'titlebar.close': 'Close',
 
   // Common

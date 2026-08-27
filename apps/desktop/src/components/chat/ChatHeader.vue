@@ -22,8 +22,10 @@ const messages = useMessagesStore();
 const models = useModelsStore();
 
 const drawerOpen = ref(false);
+const isMac = ref(false);
 
 onMounted(() => {
+  isMac.value = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
   if (!models.loaded) void models.load();
 });
 
@@ -106,6 +108,7 @@ const subText = computed(() => {
   <header
     v-if="conv"
     class="flex h-13 shrink-0 items-center justify-between border-b border-line bg-ink-1/50 px-5"
+    :class="isMac ? '' : 'pr-[120px]'"
   >
     <div class="flex min-w-0 items-center gap-3">
       <GroupAvatar v-if="conv.type === 'group'" :members="(conversations.membersMap[conv.id] ?? []).map((b) => ({ name: b.name, avatar: b.avatar, deleted: b.deleted }))" :size="34" />
